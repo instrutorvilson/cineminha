@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Aula de DOM </div>
+        <hr />
+       
+        <p>Paragrafo 1</p>
+        <p>Paragrafo 2</p>
+        <p>Paragrafo 3</p>
+        
+        <p id="result">Resultado</p>
+        
+        <input type="button" value="testar" onclick="lerTodos()" />
+        <script>                       
+            function lerTodos(){
+                var ps = document.getElementsByTagName("p");                 
+                document.getElementById("result").innerHTML = ps[2].innerHTML;
+            }
+            
+        </script> 
+    </body>
+</html>
